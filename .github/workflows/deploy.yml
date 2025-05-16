@@ -1,0 +1,29 @@
+name: Deploy to EC2
+
+on:
+    push:
+        branches:
+            - master 
+
+jobs:
+    deploy:
+        name: Push to EC2
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Check Out Repo
+              uses: actions/checkout@v2
+
+            - name: Deploy to EC2
+              uses: appleboy/ssh-action@v1.2.0
+              with:
+                  host: ${{ secrets.SSH_HOST }}
+                  username: ${{ secrets.SSH_USERNAME }}
+                  key: ${{ secrets.SSH_KEY }}
+                  port: 22
+                  script: |
+                      cd Minimal-portfolio
+                      git pull origin main
+                      npm install
+                      npm run build
+                      npm run start
