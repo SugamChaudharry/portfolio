@@ -66,7 +66,7 @@ export default function AboutSection() {
               ))}
             </div>
             <a
-              href="mailto:pankajams1234@gmail.com"
+              href="mailto:sugam.chaudharry@gmail.com"
               className="transition-colors duration-300 flex items-center gap-2 hover:text-white"
               target="_blank"
             >
