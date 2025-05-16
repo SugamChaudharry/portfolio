@@ -1,7 +1,14 @@
 'use client';
 import { motion } from 'framer-motion';
+type Project = {
+  title: string;
+  description: string;
+  tech: string[];
+  github: string | { frontend: string; backend: string };
+  live: string;
+};
 
-const projects = [
+const projects: Project[] = [
   {
     title: 'Vidly',
     description:
@@ -89,14 +96,7 @@ export default function Projects() {
               </div>
             </div>
             <div className="mt-2 text-sm flex gap-3">
-              <a
-                href={project.github}
-                className="text-slate-100 hover:text-blue-400 transition-colors font-medium hover:underline"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
+              <GitHubLinks github={project.github} />
               <span className="text-slate-400">|</span>
               <a
                 href={project.live}
@@ -111,5 +111,27 @@ export default function Projects() {
         ))}
       </div>
     </motion.div >
+  );
+}
+
+function GitHubLinks({ github }: { github: string | { frontend: string; backend: string } }) {
+  if (typeof github === 'string') {
+    return (
+      <a href={github} target="_blank" rel="noopener noreferrer" className="text-slate-100 hover:text-blue-400 font-medium hover:underline">
+        GitHub
+      </a>
+    );
+  }
+
+  return (
+    <>
+      <a href={github.frontend} target="_blank" rel="noopener noreferrer" className="text-slate-100 hover:text-blue-400 font-medium hover:underline">
+        Frontend
+      </a>
+      <span className="text-slate-400">|</span>
+      <a href={github.backend} target="_blank" rel="noopener noreferrer" className="text-slate-100 hover:text-blue-400 font-medium hover:underline">
+        Backend
+      </a>
+    </>
   );
 }
