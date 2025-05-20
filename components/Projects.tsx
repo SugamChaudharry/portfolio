@@ -27,7 +27,7 @@ const projects: Project[] = [
       frontend: 'https://github.com/SugamChaudharry/Vidly',
       backend: 'https://github.com/SugamChaudharry/Vidly_backend',
     },
-    live: 'https://vidly-watch.vercel.app/',
+    live: 'https://vidly.sugamwtw.tech/',
   },
   {
     title: 'BloggerBlog',
@@ -41,7 +41,7 @@ const projects: Project[] = [
       'Rich Text Editor',
     ],
     github: 'https://github.com/SugamChaudharry/BloggerBlog',
-    live: 'https://blogger-blog.vercel.app/',
+    live: 'https://bloggerblog.sugamwtw.tech/',
   },
   {
     title: 'SocialCircle',
@@ -61,7 +61,7 @@ const projects: Project[] = [
       frontend: 'https://github.com/SugamChaudharry/scFrontend',
       backend: 'https://github.com/SugamChaudharry/scBackend',
     },
-    live: 'https://sc-frontend-sepia.vercel.app/',
+    live: 'https://socalcircle.sugamwtw.tech/',
   },
 ];
 

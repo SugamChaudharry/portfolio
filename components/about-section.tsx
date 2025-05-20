@@ -10,7 +10,7 @@ import {
 const Socials = [
   {
     name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/sugam-chaudhary-400535235/',
+    url: 'https://www.linkedin.com/in/sugamchaudharry',
     icon: FaLinkedin,
   },
   {
@@ -25,7 +25,7 @@ const Socials = [
   },
   {
     name: 'Resume',
-    url: 'https://drive.google.com/file/d/1vwREEciHMfRYh4Kd0uc_HPJ9m4WZcWLv/view?usp=sharing',
+    url: 'https://drive.google.com/file/d/1ZI7DqlWxFxpAUaOpQvVqDNSUfCmSYrTm/view',
     icon: FaFileAlt,
   },
 ];
