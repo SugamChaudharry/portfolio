@@ -14,7 +14,7 @@ const spaceGrotesk = Space_Grotesk({
 // Metadata for the website
 export const metadata: Metadata = {
   title: 'Sugam Chaudhary | Full-stack Developer Portfolio',
-  description: 'Portfolio of Sugam Chaudhary, a Full-stack Developer',
+  description: 'persnole website of sugam chaudhary, btech student, a Full-stack Developer',
 };
 
 export default function RootLayout({
